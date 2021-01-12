@@ -247,7 +247,7 @@ if minetest.get_modpath("3d_armor") then
 		description = ("Sapphire Leggings"),
 		inventory_image = "gs_sapphire_leggings_inv.png",
 		groups = {armor_legs=1, armor_heal=16, armor_use=70},
-		armor_groups = {fleshy=30},
+		armor_groups = {fleshy=15},
 		damage_groups = {cracky=2, snappy=1, level=6},
 	})
 
@@ -255,7 +255,7 @@ if minetest.get_modpath("3d_armor") then
 		description = ("Sapphire Chestplate"),
 		inventory_image = "gs_sapphire_chestplate_inv.png",
 		groups = {armor_torso=1, armor_heal=16, armor_use=70},
-		armor_groups = {fleshy=30},
+		armor_groups = {fleshy=20},
 		damage_groups = {cracky=2, snappy=1, level=6},
 	})
 
