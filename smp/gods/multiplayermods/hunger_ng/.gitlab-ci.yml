@@ -1,0 +1,20 @@
+image: python:alpine
+
+before_script:
+    - apk add --no-cache --virtual .build gcc musl-dev
+    - pip install mkdocs
+
+pages:
+    script:
+        - mv doc docs
+        - rm docs/README.md
+        - mv README.md docs/index.md
+        - mv hunger_bar_hiding.gif docs/
+        - mv interoperability/README.md docs/README.Interoperability.md
+        - mkdocs build
+        - mv site public
+    artifacts:
+        paths:
+            - public
+    only:
+        - master
