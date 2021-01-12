@@ -262,7 +262,7 @@ if minetest.get_modpath("3d_armor") then
 		armor:register_armor("gs_sapphire:boots_sapphire", {
 		description = ("Sapphire Boots"),
 		inventory_image = "gs_sapphire_boots_inv.png",
-		groups = {armor_feet=1, armor_heal=16, armor_use=70, physics_jump=0.5},
+		groups = {armor_feet=1, armor_heal=16, armor_use=70, physics_speed=2},
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=6},
 	})
