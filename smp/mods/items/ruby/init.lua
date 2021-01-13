@@ -238,41 +238,41 @@ if minetest.get_modpath("3d_armor") then
 	armor:register_armor("gs_ruby:helmet_ruby", {
 		description = ("Ruby Helmet"),
 		inventory_image = "gs_ruby_helmet_inv.png",
-		groups = {armor_head=1, armor_heal=16, armor_use=70},
+		groups = {armor_head=1, armor_heal=0, armor_use=700},
 		armor_groups = {fleshy=10},
-		damage_groups = {cracky=2, snappy=1, level=6},
+		damage_groups = {cracky=2, snappy=1, level=2},
     })
 
 	armor:register_armor("gs_ruby:leggings_ruby", {
 		description = ("Ruby Leggings"),
 		inventory_image = "gs_ruby_leggings_inv.png",
-		groups = {armor_legs=1, armor_heal=16, armor_use=70},
+		groups = {armor_legs=1, armor_heal=0, armor_use=700},
 		armor_groups = {fleshy=15},
-		damage_groups = {cracky=2, snappy=1, level=6},
+		damage_groups = {cracky=2, snappy=1, level=2},
 	})
 
 	armor:register_armor("gs_ruby:chestplate_ruby", {
 		description = ("Ruby Chestplate"),
 		inventory_image = "gs_ruby_chestplate_inv.png",
-		groups = {armor_torso=1, armor_heal=16, armor_use=70},
-		armor_groups = {fleshy=20},
-		damage_groups = {cracky=2, snappy=1, level=6},
+		groups = {armor_torso=1, armor_heal=0, armor_use=700},
+		armor_groups = {fleshy=15},
+		damage_groups = {cracky=2, snappy=1, level=2},
 	})
 
 		armor:register_armor("gs_ruby:boots_ruby", {
 		description = ("Ruby Boots"),
 		inventory_image = "gs_ruby_boots_inv.png",
-		groups = {armor_feet=1, armor_heal=16, armor_use=70, physics_jump=0.5},
+		groups = {armor_feet=1, armor_heal=0, armor_use=800, physics_jump=0.5},
 		armor_groups = {fleshy=10},
-		damage_groups = {cracky=2, snappy=1, level=6},
+		damage_groups = {cracky=2, snappy=1, level=2},
 	})
 
 		armor:register_armor("gs_ruby:shield_ruby", {
 			description = ("Ruby Shield"),
 			inventory_image = "gs_ruby_shield_inv.png",
-			groups = {armor_shield=1, armor_heal=12, armor_use=70},
+			groups = {armor_shield=1, armor_heal=0, armor_use=800},
 			armor_groups = {fleshy=10},
-			damage_groups = {cracky=2, snappy=1, level=6},
+			damage_groups = {cracky=2, snappy=1, level=2},
 	})
 
 end
