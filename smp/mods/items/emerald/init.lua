@@ -238,7 +238,7 @@ if minetest.get_modpath("3d_armor") then
 	armor:register_armor("gs_emerald:helmet_emerald", {
 		description = ("Emerald Helmet"),
 		inventory_image = "gs_emerald_helmet_inv.png",
-		groups = {armor_head=1, armor_heal=16, armor_use=70},
+		groups = {armor_head=1, armor_heal=0, armor_use=700},
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=6},
     })
@@ -246,33 +246,33 @@ if minetest.get_modpath("3d_armor") then
 	armor:register_armor("gs_emerald:leggings_emerald", {
 		description = ("Emerald Leggings"),
 		inventory_image = "gs_emerald_leggings_inv.png",
-		groups = {armor_legs=1, armor_heal=16, armor_use=70},
+		groups = {armor_legs=1, armor_heal=0, armor_use=700},
 		armor_groups = {fleshy=15},
-		damage_groups = {cracky=2, snappy=1, level=6},
+		damage_groups = {cracky=2, snappy=1, level=2},
 	})
 
 	armor:register_armor("gs_emerald:chestplate_emerald", {
 		description = ("Emerald Chestplate"),
 		inventory_image = "gs_emerald_chestplate_inv.png",
-		groups = {armor_torso=1, armor_heal=16, armor_use=70},
+		groups = {armor_torso=1, armor_heal=0, armor_use=700},
 		armor_groups = {fleshy=15},
-		damage_groups = {cracky=2, snappy=1, level=6},
+		damage_groups = {cracky=2, snappy=1, level=2},
 	})
 
 		armor:register_armor("gs_emerald:boots_emerald", {
 		description = ("Emerald Boots"),
 		inventory_image = "gs_emerald_boots_inv.png",
-		groups = {armor_feet=1, armor_heal=16, armor_use=70, physics_speed=1, physics_jump=1},
+		groups = {armor_feet=1, armor_heal=0, armor_use=700, physics_speed=1, physics_jump=1},
 		armor_groups = {fleshy=10},
-		damage_groups = {cracky=2, snappy=1, level=6},
+		damage_groups = {cracky=2, snappy=1, level=2},
 	})
 
 		armor:register_armor("gs_emerald:shield_emerald", {
 			description = ("Emerald Shield"),
 			inventory_image = "gs_emerald_shield_inv.png",
-			groups = {armor_shield=1, armor_heal=12, armor_use=70},
+			groups = {armor_shield=1, armor_heal=0, armor_use=700},
 			armor_groups = {fleshy=10},
-			damage_groups = {cracky=2, snappy=1, level=6},
+			damage_groups = {cracky=2, snappy=1, level=2},
 	})
 
 end
