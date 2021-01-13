@@ -238,7 +238,7 @@ if minetest.get_modpath("3d_armor") then
 	armor:register_armor("gs_sapphire:helmet_sapphire", {
 		description = ("Sapphire Helmet"),
 		inventory_image = "gs_sapphire_helmet_inv.png",
-		groups = {armor_head=1, armor_heal=16, armor_use=70},
+		groups = {armor_head=1, armor_heal=0, armor_use=700},
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=6},
     })
@@ -246,7 +246,7 @@ if minetest.get_modpath("3d_armor") then
 	armor:register_armor("gs_sapphire:leggings_sapphire", {
 		description = ("Sapphire Leggings"),
 		inventory_image = "gs_sapphire_leggings_inv.png",
-		groups = {armor_legs=1, armor_heal=16, armor_use=70},
+		groups = {armor_legs=1, armor_heal=0, armor_use=700},
 		armor_groups = {fleshy=15},
 		damage_groups = {cracky=2, snappy=1, level=6},
 	})
@@ -254,15 +254,15 @@ if minetest.get_modpath("3d_armor") then
 	armor:register_armor("gs_sapphire:chestplate_sapphire", {
 		description = ("Sapphire Chestplate"),
 		inventory_image = "gs_sapphire_chestplate_inv.png",
-		groups = {armor_torso=1, armor_heal=16, armor_use=70},
-		armor_groups = {fleshy=20},
+		groups = {armor_torso=1, armor_heal=0, armor_use=700},
+		armor_groups = {fleshy=15},
 		damage_groups = {cracky=2, snappy=1, level=6},
 	})
 
 		armor:register_armor("gs_sapphire:boots_sapphire", {
 		description = ("Sapphire Boots"),
 		inventory_image = "gs_sapphire_boots_inv.png",
-		groups = {armor_feet=1, armor_heal=16, armor_use=70, physics_speed=2},
+		groups = {armor_feet=1, armor_heal=16, armor_use=700, physics_speed=2},
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=6},
 	})
@@ -270,7 +270,7 @@ if minetest.get_modpath("3d_armor") then
 		armor:register_armor("gs_sapphire:shield_sapphire", {
 			description = ("Sapphire Shield"),
 			inventory_image = "gs_sapphire_shield_inv.png",
-			groups = {armor_shield=1, armor_heal=12, armor_use=70},
+			groups = {armor_shield=1, armor_heal=0, armor_use=700},
 			armor_groups = {fleshy=10},
 			damage_groups = {cracky=2, snappy=1, level=6},
 	})
