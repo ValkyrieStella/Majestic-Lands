@@ -139,6 +139,9 @@ end
 
 -- [function] Go to home
 function multihome.go(player, name)
+         if anticombatlog[name] then
+            return false, "You cannot use /hub while combat tagged"
+        end
 	if type(player) == "string" then
 		player = minetest.get_player_by_name(player)
 	end
