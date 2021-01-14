@@ -20,7 +20,7 @@ ranks.register("west", {
 	colour = {a = 1, r = 0, g = 255, b = 0},
 })
 
-ranks.register("south", {
-	prefix = "South",
+ranks.register("north", {
+	prefix = "North",
 	colour = {a = 1, r = 255, g = 0, b = 0},
 })
