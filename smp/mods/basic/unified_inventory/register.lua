@@ -41,58 +41,6 @@ unified_inventory.register_button("craftguide", {
 	tooltip = S("Crafting Guide")
 })
 
-unified_inventory.register_button("home_gui_set", {
-	type = "image",
-	image = "ui_sethome_icon.png",
-	tooltip = S("Set home position"),
-	hide_lite=true,
-	action = function(player)
-		local player_name = player:get_player_name()
-		if minetest.check_player_privs(player_name, {home=true}) then
-			unified_inventory.set_home(player, player:get_pos())
-			local home = unified_inventory.home_pos[player_name]
-			if home ~= nil then
-				minetest.sound_play("dingdong",
-						{to_player=player_name, gain = 1.0})
-				minetest.chat_send_player(player_name,
-					S("Home position set to: @1", minetest.pos_to_string(home)))
-			end
-		else
-			minetest.chat_send_player(player_name,
-				S("You don't have the \"home\" privilege!"))
-			unified_inventory.set_inventory_formspec(player, unified_inventory.current_page[player_name])
-		end
-	end,
-	condition = function(player)
-		return minetest.check_player_privs(player:get_player_name(), {home=true})
-	end,
-})
-
-unified_inventory.register_button("home_gui_go", {
-	type = "image",
-	image = "ui_gohome_icon.png",
-	tooltip = S("Go home"),
-	hide_lite=true,
-	action = function(player)
-		local player_name = player:get_player_name()
-                if anticombatlog[name] then
-                       return false, "You cannot use GUI Home while combat tagged"
-                       end
-		if minetest.check_player_privs(player_name, {home=true}) then
-			if unified_inventory.go_home(player) then
-				minetest.sound_play("teleport", {to_player = player_name})
-			end
-		else
-			minetest.chat_send_player(player_name,
-				S("You don't have the \"home\" privilege!"))
-			unified_inventory.set_inventory_formspec(player, unified_inventory.current_page[player_name])
-		end
-	end,
-	condition = function(player)
-		return minetest.check_player_privs(player:get_player_name(), {home=true})
-	end,
-})
-
 unified_inventory.register_button("misc_set_day", {
 	type = "image",
 	image = "ui_sun_icon.png",
