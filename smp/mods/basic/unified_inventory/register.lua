@@ -74,6 +74,9 @@ unified_inventory.register_button("home_gui_go", {
 	tooltip = S("Go home"),
 	hide_lite=true,
 	action = function(player)
+                if anticombatlog[name] then
+                       return false, "You cannot use /multihome while combat tagged"
+                       end
 		local player_name = player:get_player_name()
 		if minetest.check_player_privs(player_name, {home=true}) then
 			if unified_inventory.go_home(player) then
