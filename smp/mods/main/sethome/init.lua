@@ -86,6 +86,9 @@ minetest.register_chatcommand("home", {
 	description = S("Teleport you to your home point"),
 	privs = {interact = true},
 	func = function(name)
+        if anticombatlog[name] then
+            return false, "You cannot use /home while combat tagged"
+        end
 		if sethome.go(name) then
 			return true, S("Teleported to home!")
 		end
