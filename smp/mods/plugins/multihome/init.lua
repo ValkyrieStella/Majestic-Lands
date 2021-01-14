@@ -193,7 +193,7 @@ if compat == "none" or compat == "deprecate" then
 	minetest.register_chatcommand("multihome", {
 		description = "Manage your home points",
 		params = "<action> <home name> | <set, del, go, list>, <home name>",
-		privs = {multihome=true},
+		privs = {interact=true},
 		func = function(name, params)
                        if anticombatlog[name] then
                        return false, "You cannot use /multihome while combat tagged"
