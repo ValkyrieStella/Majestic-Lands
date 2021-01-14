@@ -139,9 +139,6 @@ end
 
 -- [function] Go to home
 function multihome.go(player, name)
-         if anticombatlog[name] then
-            return false, "You cannot use /hub while combat tagged"
-        end
 	if type(player) == "string" then
 		player = minetest.get_player_by_name(player)
 	end
@@ -198,6 +195,9 @@ if compat == "none" or compat == "deprecate" then
 		params = "<action> <home name> | <set, del, go, list>, <home name>",
 		privs = {multihome=true},
 		func = function(name, params)
+                       if anticombatlog[name] then
+                       return false, "You cannot use /multihome while combat tagged"
+                       end
 			local params = params:split(" ")
 
 			if #params == 2 and params[1] == "set" then
