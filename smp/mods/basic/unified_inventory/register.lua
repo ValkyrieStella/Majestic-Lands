@@ -76,7 +76,7 @@ unified_inventory.register_button("home_gui_go", {
 	action = function(player)
 		local player_name = player:get_player_name()
                 if anticombatlog[name] then
-                       return false, "You cannot use Gui Home while combat tagged"
+                       return false, "You cannot use GUI Home while combat tagged"
                        end
 		if minetest.check_player_privs(player_name, {home=true}) then
 			if unified_inventory.go_home(player) then
