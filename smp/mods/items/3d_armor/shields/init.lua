@@ -160,7 +160,7 @@ if armor.materials.diamond then
 		description = S("Diamond Shield"),
 		inventory_image = "shields_inv_shield_diamond.png",
 		groups = {armor_shield=1, armor_heal=12, armor_use=200},
-		armor_groups = {fleshy=15},
+		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, choppy=1, level=3},
 		reciprocate_damage = true,
 		on_damage = function(player, index, stack)
@@ -195,7 +195,7 @@ if armor.materials.mithril then
 		description = S("Mithril Shield"),
 		inventory_image = "shields_inv_shield_mithril.png",
 		groups = {armor_shield=1, armor_heal=12, armor_use=100},
-		armor_groups = {fleshy=15},
+		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=3},
 		reciprocate_damage = true,
 		on_damage = function(player, index, stack)
@@ -212,7 +212,7 @@ if armor.materials.crystal then
 		description = S("Crystal Shield"),
 		inventory_image = "shields_inv_shield_crystal.png",
 		groups = {armor_shield=1, armor_heal=12, armor_use=100, armor_fire=1},
-		armor_groups = {fleshy=15},
+		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=3},
 		reciprocate_damage = true,
 		on_damage = function(player, index, stack)
