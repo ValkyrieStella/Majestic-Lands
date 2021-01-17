@@ -309,30 +309,30 @@ if armor.materials.crystal then
 	armor:register_armor("3d_armor:helmet_crystal", {
 		description = S("Crystal Helmet"),
 		inventory_image = "3d_armor_inv_helmet_crystal.png",
-		groups = {armor_head=1, armor_heal=12, armor_use=100, armor_fire=1},
-		armor_groups = {fleshy=15},
+		groups = {armor_head=1, armor_heal=0, armor_use=100, armor_fire=1},
+		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=3},
 	})
 	armor:register_armor("3d_armor:chestplate_crystal", {
 		description = S("Crystal Chestplate"),
 		inventory_image = "3d_armor_inv_chestplate_crystal.png",
-		groups = {armor_torso=1, armor_heal=12, armor_use=100, armor_fire=1},
-		armor_groups = {fleshy=20},
+		groups = {armor_torso=1, armor_heal=0, armor_use=100, armor_fire=1},
+		armor_groups = {fleshy=15},
 		damage_groups = {cracky=2, snappy=1, level=3},
 	})
 	armor:register_armor("3d_armor:leggings_crystal", {
 		description = S("Crystal Leggings"),
 		inventory_image = "3d_armor_inv_leggings_crystal.png",
-		groups = {armor_legs=1, armor_heal=12, armor_use=100, armor_fire=1},
-		armor_groups = {fleshy=20},
+		groups = {armor_legs=1, armor_heal=0, armor_use=100, armor_fire=1},
+		armor_groups = {fleshy=15},
 		damage_groups = {cracky=2, snappy=1, level=3},
 	})
 	armor:register_armor("3d_armor:boots_crystal", {
 		description = S("Crystal Boots"),
 		inventory_image = "3d_armor_inv_boots_crystal.png",
-		groups = {armor_feet=1, armor_heal=12, armor_use=100, physics_speed=1,
+		groups = {armor_feet=1, armor_heal=0, armor_use=100, physics_speed=1,
 				physics_jump=0.5, armor_fire=1},
-		armor_groups = {fleshy=15},
+		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=3},
 	})
 end
