@@ -251,7 +251,7 @@ if armor.materials.gold then
 	armor:register_armor("3d_armor:chestplate_gold", {
 		description = S("Gold Chestplate"),
 		inventory_image = "3d_armor_inv_chestplate_gold.png",
-		groups = {armor_torso=1, armor_heal=6, armor_use=300,
+		groups = {armor_torso=1, armor_heal=0, armor_use=300,
 			physics_speed=-0.05, physics_gravity=0.05},
 		armor_groups = {fleshy=15},
 		damage_groups = {cracky=1, snappy=2, choppy=2, crumbly=3, level=2},
@@ -259,7 +259,7 @@ if armor.materials.gold then
 	armor:register_armor("3d_armor:leggings_gold", {
 		description = S("Gold Leggings"),
 		inventory_image = "3d_armor_inv_leggings_gold.png",
-		groups = {armor_legs=1, armor_heal=6, armor_use=300,
+		groups = {armor_legs=1, armor_heal=0, armor_use=300,
 			physics_speed=-0.04, physics_gravity=0.04},
 		armor_groups = {fleshy=15},
 		damage_groups = {cracky=1, snappy=2, choppy=2, crumbly=3, level=2},
@@ -267,7 +267,7 @@ if armor.materials.gold then
 	armor:register_armor("3d_armor:boots_gold", {
 		description = S("Gold Boots"),
 		inventory_image = "3d_armor_inv_boots_gold.png",
-		groups = {armor_feet=1, armor_heal=6, armor_use=300,
+		groups = {armor_feet=1, armor_heal=0, armor_use=300,
 			physics_speed=-0.02, physics_gravity=0.02},
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=1, snappy=2, choppy=2, crumbly=3, level=2},
