@@ -141,7 +141,7 @@ if armor.materials.bronze then
 	armor:register_armor("shields:shield_bronze", {
 		description = S("Bronze Shield"),
 		inventory_image = "shields_inv_shield_bronze.png",
-		groups = {armor_shield=1, armor_heal=6, armor_use=400,
+		groups = {armor_shield=1, armor_heal=0, armor_use=400,
 			physics_speed=-0.03, physics_gravity=0.03},
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
@@ -159,7 +159,7 @@ if armor.materials.diamond then
 	armor:register_armor("shields:shield_diamond", {
 		description = S("Diamond Shield"),
 		inventory_image = "shields_inv_shield_diamond.png",
-		groups = {armor_shield=1, armor_heal=12, armor_use=200},
+		groups = {armor_shield=1, armor_heal=0, armor_use=200},
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, choppy=1, level=3},
 		reciprocate_damage = true,
@@ -176,7 +176,7 @@ if armor.materials.gold then
 	armor:register_armor("shields:shield_gold", {
 		description = S("Gold Shield"),
 		inventory_image = "shields_inv_shield_gold.png",
-		groups = {armor_shield=1, armor_heal=6, armor_use=300,
+		groups = {armor_shield=1, armor_heal=0, armor_use=300,
 			physics_speed=-0.04, physics_gravity=0.04},
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=1, snappy=2, choppy=2, crumbly=3, level=2},
@@ -194,7 +194,7 @@ if armor.materials.mithril then
 	armor:register_armor("shields:shield_mithril", {
 		description = S("Mithril Shield"),
 		inventory_image = "shields_inv_shield_mithril.png",
-		groups = {armor_shield=1, armor_heal=12, armor_use=100},
+		groups = {armor_shield=1, armor_heal=0, armor_use=100},
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=3},
 		reciprocate_damage = true,
@@ -211,7 +211,7 @@ if armor.materials.crystal then
 	armor:register_armor("shields:shield_crystal", {
 		description = S("Crystal Shield"),
 		inventory_image = "shields_inv_shield_crystal.png",
-		groups = {armor_shield=1, armor_heal=12, armor_use=100, armor_fire=1},
+		groups = {armor_shield=1, armor_heal=0, armor_use=100, armor_fire=1},
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=3},
 		reciprocate_damage = true,
