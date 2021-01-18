@@ -47,6 +47,15 @@ minetest.register_entity(corpse, {
         self._player:set_pos(self.object:get_pos())
     end
 })
+static_spawnpoint = minetest.settings:get"static_spawnpoint"
+if static_spawnpoint then
+    static_spawnpoint = minetest.string_to_pos(static_spawnpoint)
+end
+--+ Equivalent of `Server::findSpawnPos()`
+function find_spawn_pos()
+    -- TODO replicate random spawnpoint finding
+    return static_spawnpoint or vector.new(0, 0, 0)
+end
 minetest.register_on_mods_loaded(function()
     -- HACK to route all on_respawnplayer callbacks over respawn(player)
     local ignore_next_on_player_hpchange = false
@@ -70,9 +79,8 @@ minetest.register_on_mods_loaded(function()
         for _, callback in ipairs(registered_on_respawnplayers) do
             reposition = reposition or callback(player)
         end
-        if reposition then
-            player:set_pos(player:get_pos())
-        end
+        player:set_pos(reposition and player:get_pos() or find_spawn_pos())
+
         -- Explicitly unignore next HP change
         ignore_next_on_player_hpchange = false
         -- Do stuff Minetest does on respawn
