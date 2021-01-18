@@ -1,0 +1,5 @@
+hud_timers.hud_timers_max (Hud timers hud_timers_max) float 10 0.000000 100.000000
+hud_timers.format (Hud timers format) string %s: %s s
+hud_timers.globalstep (Hud timers globalstep) float 0.1 0.000000 1073741824.000000
+hud_timers.hud_pos.y (Hud timers hud_pos y) float 0.9
+hud_timers.hud_pos.x (Hud timers hud_pos x) float 0.1

@@ -1,0 +1,6 @@
+{
+  "hud_pos" : {"x": 0.1,"y": 0.9},
+  "globalstep" : 0.1,
+  "hud_timers_max" : 10,
+  "format" : "%s: %s s"
+}
