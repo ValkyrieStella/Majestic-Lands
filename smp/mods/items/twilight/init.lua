@@ -3,7 +3,7 @@
 -----------------------
 
 minetest.register_tool("twilight:boots_twilight", {
-	description = ("Twilight Boots"),
+	description = ("Twilight Boots (It's A Pickaxe)"),
 	inventory_image = "twilight_inv_boots_twilight.png",
 	light_source = 7, -- Texture will have a glow when dropped
 	tool_capabilities = {
