@@ -10,7 +10,7 @@ minetest.register_tool("twilight:boots_twilight", {
 		full_punch_interval = 0.5,
 		max_drop_level=3,
 		groupcaps={
-			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=15, maxlevel=3},
+			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=1, maxlevel=3},
 		},
 		damage_groups = {fleshy=5},
 	},
