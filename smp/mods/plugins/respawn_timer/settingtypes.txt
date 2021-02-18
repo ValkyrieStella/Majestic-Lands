@@ -1,7 +1,0 @@
-[*respawn_timer.timer]
-# Timer fill color as hex string
-respawn_timer.timer.color (Respawn timer Timer Color) string FF00FF
-# Timer duration in seconds
-respawn_timer.timer.duration (Respawn timer Timer Duration) float 5
-# Timer caption
-respawn_timer.timer.name (Respawn timer Timer Name) string Respawn
