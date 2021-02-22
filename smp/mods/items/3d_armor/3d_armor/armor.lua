@@ -179,7 +179,7 @@ if armor.materials.bronze then
 		inventory_image = "3d_armor_inv_helmet_bronze.png",
 		groups = {armor_head=1, armor_heal=0, armor_use=400,
 			physics_speed=-0.01, physics_gravity=0.01},
-		armor_groups = {fleshy=10},
+		armor_groups = {fleshy=5},
 		damage_groups = {cracky=3, snappy=2, choppy=2, crumbly=1, level=2},
 	})
 	armor:register_armor("3d_armor:chestplate_bronze", {
@@ -187,7 +187,7 @@ if armor.materials.bronze then
 		inventory_image = "3d_armor_inv_chestplate_bronze.png",
 		groups = {armor_torso=1, armor_heal=0, armor_use=400,
 			physics_speed=-0.04, physics_gravity=0.04},
-		armor_groups = {fleshy=15},
+		armor_groups = {fleshy=12},
 		damage_groups = {cracky=3, snappy=2, choppy=2, crumbly=1, level=2},
 	})
 	armor:register_armor("3d_armor:leggings_bronze", {
@@ -195,7 +195,7 @@ if armor.materials.bronze then
 		inventory_image = "3d_armor_inv_leggings_bronze.png",
 		groups = {armor_legs=1, armor_heal=0, armor_use=400,
 			physics_speed=-0.03, physics_gravity=0.03},
-		armor_groups = {fleshy=15},
+		armor_groups = {fleshy=12},
 		damage_groups = {cracky=3, snappy=2, choppy=2, crumbly=1, level=2},
 	})
 	armor:register_armor("3d_armor:boots_bronze", {
@@ -203,7 +203,7 @@ if armor.materials.bronze then
 		inventory_image = "3d_armor_inv_boots_bronze.png",
 		groups = {armor_feet=1, armor_heal=0, armor_use=400,
 			physics_speed=-0.01, physics_gravity=0.01},
-		armor_groups = {fleshy=10},
+		armor_groups = {fleshy=5},
 		damage_groups = {cracky=3, snappy=2, choppy=2, crumbly=1, level=2},
 	})
 end
